@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rayal Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <style>
+            header{
+                height: 750px;
+                background-image: url(img/background_head.png);
+                background-repeat: no-repeat;
+            }
+            .text_link{
+                text-decoration: none;
+                color: #081F32;
+                font-style: normal;
+                margin-left: 40px;
+                font-family: 'Gelasio', serif;
+                transition: all 0.3s;
+            }
+            .up_page{
+                width: 100%;
+                display: grid;
+                grid-template-columns:12% 10% 1fr 1fr 12%;
+                padding-top: 30px;
+            }
+
+            .div_button_book_now{   
+                margin-left: 330px;
+                margin-top: 0px;
+            }
+            .header_link{
+                margin-top: 10px;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            .div_text_link:hover .text_link{
+                color: #1B75BB;
+            }
+            .button_defolt{
+                border: 1px solid transparent;
+                outline: 1px solid #1b76bb;
+                border-radius: 5px;
+                height: 55px;
+                color: #fff;
+                padding: 15px 30px 15px 30px;
+                background-color: #1B75BB;
+                transition: all 0.3s;
+            }
+            .button_text{
+                font-size: 16px;
+                font-weight: 200;
+                transform: scale(1);
+                transition: 0.3s all;
+            }
+            .p_Rayal_Park{
+                position: absolute;
+                font-size: 24px;
+                top: 50px;
+                padding-left: 45px;
+                
+            }
+            .button_defolt:hover{
+                outline: 7px solid #1B75BB;
+                border-radius: 7px;
+            }
+            .button_defolt:hover .button_text{
+                transform: scale(1.2);
+            }
+        </style>
+        <div class="up_page">
+            <div></div>
+            <div class="icon_cite">
+                <img class="icon_img" src="img/icon_cite.png" alt="icon_cite">
+                <p class="p_Rayal_Park">Rayal Park</p>
+            </div>
+            <div class="header_link">
+                <div class="div_text_link">
+                    <a class="text_link" href="#">
+                        Home
+                    </a>
+                </div>
+                <div class="div_text_link">
+                    <a class="text_link" href="#">
+                        Features
+                    </a>
+                </div>
+                <div class="div_text_link">
+                    <a class="text_link" href="#">
+                        Gallary
+                    </a>
+                </div>
+                <div class="div_text_link">
+                    <a class="text_link" href="#">
+                        Testimonials
+                    </a>
+                </div>
+                <div></div>
+                
+            </div>
+            <div class="div_button_book_now">
+                <button class="button_defolt button_Book_now"><p class="button_text">Book now</p></button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
