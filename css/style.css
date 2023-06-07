@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -49,3 +50,248 @@ a {
     font-weight: normal;
 }
 * { font-family:'Gelasio', serif; }
+.head_info{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns:12% 1fr 12%;
+    grid-template-rows: 100px 100px 100px; */
+    padding-top: 30px;
+}
+.p_span span{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 120%;
+    /* or 68px */
+
+
+    color: #1B75BB;
+
+}
+.button_Read_more{
+
+}
+header{
+    height: 750px;
+    background-image: url(/img/background_head.png);
+    background-repeat: no-repeat;
+}
+.text_link{
+    text-decoration: none;
+    color: #081F32;
+    font-style: normal;
+    margin-left: 40px;
+    font-family: 'Gelasio', serif;
+    transition: all 0.3s;
+}
+.up_page{
+    width: 100%;
+    display: grid;
+    grid-template-columns:12% 10% 1fr 1fr 12%;
+    padding-top: 30px;
+}
+
+.div_button_book_now{   
+    margin-left: 330px;
+    margin-top: 0px;
+}
+.header_link{
+    margin-top: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.div_text_link:hover .text_link{
+    color: #1B75BB;
+}
+.button_defolt{
+    border: 1px solid transparent;
+    outline: 1px solid #1b76bb;
+    border-radius: 5px;
+    height: 55px;
+    color: #fff;
+    padding: 15px 30px 15px 30px;
+    background-color: #1B75BB;
+    transition: all 0.3s;
+}
+.button_text{
+    font-size: 16px;
+    font-weight: 200;
+    transform: scale(1);
+    transition: 0.3s all;
+}
+.p_Rayal_Park{
+    position: absolute;
+    font-size: 24px;
+    top: 50px;
+    padding-left: 45px;
+    
+}
+.button_defolt:hover{
+    transform: scale(1.1);
+}
+.button_defolt:hover .button_text{
+    transform: scale(1);
+}
+.emptiness_head{
+    min-height: 150px;
+}
+.text_head_info{
+    max-width: 500px;
+}
+.head_info{
+    margin-left: 12%;
+}
+.p_first_line{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+
+color: #081F32;
+}
+.p_two_line{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+
+color: #081F32;
+
+opacity: 0.8;
+}
+.head_bottom_element_section{
+    display: inline-block;
+    padding: 25px 30px 25px 30px;
+}
+.head_bottom_element{
+    background: rgba(255, 255, 255, 0.21);
+backdrop-filter: blur(35px);
+/* Note: backdrop-filter has minimal browser support */
+width: 687px;
+height: 110px;
+margin-top: 2%;
+margin-left: 12%;
+border-radius: 10px;
+}
+main{
+    min-height: 3200px;
+}
+.dreamHolidays{
+    /* border: 1px solid black; */
+    width: 1301px;
+    height: 462px;
+    margin-left: 41px;
+
+    display: flex;
+    justify-content: space-between
+}
+.stek_img{
+    height: 382px;
+    width: 687px;
+    /* border: 1px solid black; */
+    margin-left: 86px;
+}
+.div_textAndButton{
+    /* border: 1px solid black; */
+    width: 430px;
+    height: 222px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.first_img{
+    width: 630px;
+    position: absolute;         
+    height: 325px;
+    z-index: 1;
+    border-radius: 10px; 
+    background-image: url(/img/1image_main.jpg);
+    transform:translateY(50px);
+    background-size: 100%;
+}
+.tho_img{
+    width: 630px; 
+    position: absolute; 
+    z-index: -1;
+    border-radius: 10px;            
+    height: 325px; 
+    background-image: url(/img/2image_main.jpg);
+    background-size: 100%;
+    transform:translateX(55px);
+}
+.why_You_Choose_us{
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 1140px;
+    height: 446px;
+}
+.h1_card{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    
+    text-align: center;
+    
+    color: #081F32;
+}
+.h2_card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    
+    text-align: center;
+    
+    color: #081F32;
+    
+    opacity: 0.6;
+}
+.all_card{
+    width: 1140px;
+    height: 258px;
+    padding-top: 60px;
+    display:inline-flex;
+    align-items: center
+}
+.t1_card{
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+}
+.svg_card{
+    padding-left: 50px;
+    
+}
+.hotel_gallery{
+    padding-left: 12%;
+    padding-right: 12%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;    
+}
+.gallery_card{
+    
+    border: 1px black solid;
+    width: 555px;
+    height: 337px;
+    border-radius: 10px;
+}
+.botton_card{
+    border: 1px black solid;
+}

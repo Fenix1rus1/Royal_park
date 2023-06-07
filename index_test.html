@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation: moveAndColor 0.5s ease;
+    }
+
+    @keyframes moveAndColor {
+      0% {
+        left: 0;
+        background-color: red;
+      }
+      50% {
+        left: 50px;
+        background-color: blue;
+      }
+      100% {
+        left: 0;
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var box = document.querySelector('.box');
+      var clicked = false;
+
+      box.addEventListener('click', function() {
+        if (!clicked) {
+          box.style.animationPlayState = 'running';
+        } else {
+          box.style.animationPlayState = 'paused';
+        }
+
+        clicked = !clicked;
+      });
+
+      box.addEventListener('animationend', function() {
+        box.style.animation = 'none';
+        setTimeout(function() {
+          box.style.animation = 'moveAndColor 0.5s ease';
+        }, 1);
+      });
+    });
+  </script>
+</body>
+</html>
